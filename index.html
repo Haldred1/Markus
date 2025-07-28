@@ -43,7 +43,7 @@
 
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: #1a1a1a;
+        background: #262626;
         color: #f0f0f0;
         margin: 0;
         padding: 0;
@@ -52,12 +52,13 @@
         min-height: 100vh;
       }
       header {
-        background: #3b0a45;
+        background: black ;
         padding: 2rem;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
         position: relative;
         overflow: visible;
+        box-shadow: 2px 2px 2px red;
       }
       header h1 {
         margin: 0;
@@ -111,11 +112,11 @@
       blockquote {
         font-style: italic;
         color: #ccc;
-        background: #333;
-        border-left: 6px solid #f5c518;
+        background: #262626;
+        border-left: 6px solid white;
         margin: 1rem 0;
         padding: 0.7rem 1rem;
-        box-shadow: 0 0 8px #f5c51899 inset;
+        box-shadow: 0 0 8px silver;
       }
       ul {
         list-style-type: disc;
@@ -129,7 +130,7 @@
         text-decoration: underline;
       }
       footer {
-        background: #3b0a45;
+        background: black;
         text-align: center;
         padding: 1rem 0;
         color: #f0f0f0;
@@ -138,6 +139,7 @@
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.7);
         position: relative;
         z-index: 5;
+        box-shadow: 2px 2px 2px 2px red;
       }
       .contact-info p {
         margin: 0.2rem 0;
@@ -242,6 +244,17 @@
         margin-bottom: 2rem;
         font-style: normal;
       }
+
+      .author2 {
+        background: black;
+        border: 1px solid silver;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 2px silver;
+        margin-bottom: 2rem;
+        font-style: normal;
+      }
+
       .photographer h3,
       .author h3 {
         margin-top: 0;
@@ -514,7 +527,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="author2">
         <h2>What People Say</h2>
         <blockquote>
           “Saw a shadow once. Could have been a ghost. Could have been my
@@ -556,6 +569,8 @@
           Sign Up Now
         </button>
       </section>
+
+
     </main>
 
     <!-- Floating ghost shapes -->
@@ -569,16 +584,26 @@
     <div class="eye bottom-left" aria-hidden="true"></div>
     <div class="eye bottom-right" aria-hidden="true"></div>
 
-    <footer></footer>
+    <footer>
+
+  <div class="back-to-top-container">
+    <button onclick="scrollToTop()" class="back-to-top">↑ Back to Top</button>
+  </div>
+    </footer>
 
     <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-      }
-    </script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  // Back to Top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
   </body>
 </html>
