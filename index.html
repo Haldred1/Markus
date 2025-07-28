@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Spirit Bros Paranormal Pros</title>
+    <title>
+      Mark's Media, Authoring, Ghost hunting, Podcasting, AI, Productions!
+    </title>
     <style>
       @keyframes floatUpDown {
         0%,
@@ -49,19 +50,6 @@
         overflow-x: hidden;
         position: relative;
         min-height: 100vh;
-       body {
-  background-color: black;
-  background-image: url('background.gif');
-  background-repeat: no-repeat;
-  background-size: 200px 200px;  /* smaller size */
-  background-position: center;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
       }
       header {
         background: #3b0a45;
@@ -82,7 +70,7 @@
         margin: 0.5rem 0 0 0;
         font-style: italic;
         font-weight: 600;
-        color: #f5c518;
+        color: white;
         text-shadow: 0 0 6px #d4af37;
       }
 
@@ -236,10 +224,18 @@
       }
 
       /* Photographer & Author mock sections */
-      .photographer,
+      .photographer {
+        background: #2d0e3a;
+        border: 1px solid gold;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 15px #f5c51888 inset;
+        margin-bottom: 2rem;
+        font-style: normal;
+      }
       .author {
         background: #2d0e3a;
-        border: 2px dashed #f5c518;
+        border: 1px solid silver;
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 0 15px #f5c51888 inset;
@@ -261,7 +257,7 @@
         color: #ccc;
         background: #3b0a45;
         padding: 0.6rem 1rem;
-        border-left: 4px solid #f5c518;
+        border-left: 5px solid red;
         margin: 0.6rem 0 1rem 0;
         box-shadow: 0 0 8px #f5c51899 inset;
       }
@@ -285,24 +281,84 @@
       #muteBtn:hover {
         background: #d4af37;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container */
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Spirit Bros Paranormal Pros</h1>
+      <h1>
+        Mark's Media, Authoring, Ghost hunting, Podcasting, AI, Productions!
+      </h1>
       <p>
         Your #1 Source for Totally Real Ghost Hunting, Authoring, and
-        Photography
+        Photography and Podcasting without the help of AI!
       </p>
       <div class="ghost-orb" aria-hidden="true"></div>
     </header>
 
     <main>
       <section>
-        <h2>Meet the “Expert”</h2>
+        <h2>Meet the “Master of all trades”</h2>
         <p>
-          <strong>The Weasel</strong> — Self-proclaimed
-          <em>Author, Photographer, and Ghosthunter Extraordinaire.</em>
+          <strong>Markus "The Weasel" Smith</strong> — Self-proclaimed
+          <em>Author, Photographer, Pod caster, and Ghosthunter Extraordinaire.</em>
         </p>
         <p>
           No training. No degree. No problem! Using nothing but a £5 EMF reader
@@ -347,6 +403,70 @@
           “I didn’t know if it was the author or the robot speaking — or both. 5
           stars!” — AI Enthusiast Reader
         </div>
+        </section>
+
+        <section class="author">
+          <h3>Podcaster (Master of Long Pauses and Monotony)</h3>
+          <p>
+            After conquering authorship with AI and dabbling in photography, The
+            Weasel decided to take up podcasting. Armed with a monotone voice,
+            epic pauses, and the uncanny ability to turn spine-chilling ghost
+            stories into soporific tales, he’s redefining boredom one episode at
+            a time.
+          </p>
+          <p>
+            Listeners report feeling both haunted and hypnotized, often dozing
+            off mid-story. Perfect for insomniacs or anyone who enjoys counting
+            ghosts instead of sheep.
+          </p>
+          <div class="testimonial">
+            “I started the podcast for some spooky thrills — instead, I got a
+            nap. 5 stars!” — Sleepy Listener
+          </div>
+        </section>
+      </section>
+
+      <section class="chat-gpt-roast">
+        <h2>Chat GPT Roast</h2>
+        <p>Click to expand:</p>
+
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://haldred1.github.io/Markus/1.png"
+              alt=""
+              style="width: 100%; border: 2px solid silver; border-radius: 4px"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="https://haldred1.github.io/Markus/2_2.png"
+              alt=""
+              style="width: 100%; border: 2px solid silver; border-radius: 4px"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="row">
+          <div class="column">
+            <img
+              src="https://haldred1.github.io/Markus/3.png"
+              alt=""
+              style="width: 100%; border: 2px solid silver; border-radius: 4px"
+              onclick="myFunction(this);"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg" style="width: 100%" />
+          <div id="imgtext"></div>
+        </div>
       </section>
 
       <section>
@@ -359,16 +479,19 @@
             Wi-Fi dead zones.
           </li>
           <li>
+            <br />
             <strong>Ghostly Photography</strong><br />
             Professional blurry shadow photos included free with every
             investigation. Perfect for framing or scaring your friends.
           </li>
           <li>
+            <br />
             <strong>Authoring</strong><br />
             Two books published — both written with AI assistance and one
             afternoon of editing. Available on all major platforms (probably).
           </li>
           <li>
+            <br />
             <strong>Wedding Videography</strong><br />
             Because why not? We also transfer your special day to DVD with zero
             prior experience.
@@ -401,20 +524,19 @@
           “Bought the EMF stick. Lights up near my toaster. Very spooky.” — Also
           Not a Client
         </blockquote>
+        <blockquote>"I know what i'm doing David!</blockquote>
       </section>
 
       <section>
         <h2>Get in Touch</h2>
         <div class="contact-info">
-          <p><strong>Email:</strong> spiritbros@notrealemail.com</p>
-          <p><strong>Phone:</strong> 01234-HAUNTME</p>
           <p>
             <strong>Facebook:</strong>
             <a
-              href="https://fb.me/spiritbrosnotreally"
+              href="https://www.facebook.com/profile.php?id=100084104136974"
               target="_blank"
               rel="noopener noreferrer"
-              >fb.me/spiritbrosnotreally</a
+              >Supernatural Scotland</a
             >
           </p>
         </div>
@@ -447,53 +569,16 @@
     <div class="eye bottom-left" aria-hidden="true"></div>
     <div class="eye bottom-right" aria-hidden="true"></div>
 
-    <footer>
-      &copy; 2025 Spirit Bros Paranormal Pros — All Spooky Rights Reserved
-    </footer>
-
-    <!-- 🔊 Audio Player & Mute Button -->
-    <audio id="spookySound" preload="auto" loop>
-      <source
-        src="https://cdn.pixabay.com/audio/2022/10/17/audio_4b33e6f1a1.mp3"
-        type="audio/mpeg"
-      />
-      Your browser does not support the audio element.
-    </audio>
-    <button id="muteBtn">🔊 Mute</button>
+    <footer></footer>
 
     <script>
-      const spookySound = document.getElementById("spookySound");
-      const muteBtn = document.getElementById("muteBtn");
-
-      window.addEventListener("load", () => {
-        spookySound.volume = 0.3;
-        spookySound.play().catch(() => {
-          muteBtn.textContent = "🔈 Play Sound";
-          muteBtn.setAttribute("aria-pressed", "true");
-        });
-      });
-
-      muteBtn.addEventListener("click", () => {
-        if (spookySound.paused) {
-          spookySound.play();
-          muteBtn.textContent = "🔊 Mute";
-          muteBtn.setAttribute("aria-pressed", "false");
-        } else {
-          spookySound.pause();
-          muteBtn.textContent = "🔈 Play Sound";
-          muteBtn.setAttribute("aria-pressed", "true");
-        }
-      });
-
-      // Mobile unlock
-      let soundUnlocked = false;
-      function unlockSound() {
-        if (!soundUnlocked) {
-          spookySound.play().catch(() => {});
-          soundUnlocked = true;
-        }
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
       }
-      document.body.addEventListener("click", unlockSound, { once: true });
     </script>
   </body>
 </html>
