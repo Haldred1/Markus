@@ -592,15 +592,19 @@
         }
       }
       document.body.addEventListener("click", unlockSound, { once: true });
- function openLightbox(src) {
+ 
+     function openLightbox(src) {
     const lightbox = document.getElementById("lightbox");
-    const img = document.getElementById("lightbox-img");
-    img.src = src;
+    const lightboxImg = document.getElementById("lightbox-img");
     lightbox.style.display = "flex";
+    lightboxImg.src = src;
   }
 
   function closeLightbox() {
-    document.getElementById("lightbox").style.display = "none";
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
   }
       
     </script>
