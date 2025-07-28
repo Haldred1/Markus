@@ -340,13 +340,18 @@
     <section>
   <h2>Gallery of Chat GPT Roasting</h2>
   <p>Click the images to see in full glory!</p>
-  <a href="1.png" target="_blank" rel="noopener noreferrer" style="margin-right:1rem; display:inline-block;">
-    <img src="1.png" alt="Spooky Image 1" style="width:150px; cursor:pointer; border: 2px solid #f5c518; border-radius: 6px;" />
-  </a>
-  <a href="2.png" target="_blank" rel="noopener noreferrer" style="display:inline-block;">
-    <img src="2.png" alt="Spooky Image 2" style="width:150px; cursor:pointer; border: 2px solid #f5c518; border-radius: 6px;" />
-  </a>
+   <div class="gallery">
+    <img src="1.png" alt="Spooky Image 1" class="thumbnail" onclick="openLightbox('1.png')" />
+    <img src="2.png" alt="Spooky Image 2" class="thumbnail" onclick="openLightbox('2.png')" />
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Full Image" />
+  </div>
 </section>
+
       
       <section>
         <h2>Our Services</h2>
