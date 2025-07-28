@@ -436,23 +436,24 @@
         </div>
       </section>
 
-  <section>
+<section>
   <h2>Chat GPT roast</h2>
   <p>Click to zoom</p>
 
   <div class="commit-style-box">
     <a href="1.png" target="_blank" rel="noopener noreferrer">
-      <img src="1.png" alt="Spooky Image 1" />
+      <img src="1.png" alt="Spooky Image 1" onclick="openLightbox(this.src)" />
     </a>
     <div>
       <code></code>
     </div>
   </div>
-  </section>
+</section>
 
+<section>
   <div class="commit-style-box">
     <a href="2_2.png" target="_blank" rel="noopener noreferrer">
-      <img src="2_2.png" alt="Spooky Image 2" />
+      <img src="2_2.png" alt="Spooky Image 2" onclick="openLightbox(this.src)" />
     </a>
     <div>
       <code>Shadowy figure next to fridge. May be a ghost. May be Steve.</code>
@@ -460,16 +461,12 @@
   </div>
 </section>
 
-  <div class="commit-style-box">
-    <a href="2_2.png" target="_blank" rel="noopener noreferrer">
-      <img src="2_2.png" alt="Spooky Image 2" />
-    </a>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Full Image" />
+</div>
 
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close-btn">&times;</span>
-    <img class="lightbox-img" id="lightbox-img" src="" alt="Full Image" />
-  </div>
 </section>
 
       
